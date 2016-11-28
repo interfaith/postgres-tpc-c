@@ -1,0 +1,22 @@
+As shown by pictures:
+- Loading data using postgres: Elapsed time : 20 Minutes 44 Seconds 549 Milliseconds
+- Loading data using my tables (note same sql statements: type, constraints, ...) in addition create join indexes: Elapsed time : 9 Minutes 4 Seconds 382 Milliseconds
+
+
+- Running TPC-C on Postgres for 1 minute result in:
+New-Order: 71 Transactions
+Payment: 55 Transactions
+Order-Status: 47 Transactions
+Delivery: 54 Transactions
+Stock-Level: 32  Transactions
+Total number of Transactions is: 259
+
+
+
+- Running TPC-C on BjoinData Join Index engine for 1 minute result in:
+New-Order: 865 Transactions
+Payment: 823 Transactions
+Order-Status: 912 Transactions
+Delivery: 813 Transactions
+Stock-Level: 912  Transactions
+Total number of Transactions is: 4325
