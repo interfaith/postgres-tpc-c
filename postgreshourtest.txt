@@ -1,0 +1,14 @@
+As shown by pictures:
+
+
+- Running TPC-C on Postgres for 60 minute result in:
+
+Total number of Transactions is: 5061
+
+
+
+- Running TPC-C on BjoinData Join Index engine for 71seconds result in:
+
+Total number of Transactions is: 5061
+
+ basically in one minute bjoindata can do what others will take 1 hour
